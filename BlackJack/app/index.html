@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BlackJack Game by Wang Rui</title>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>BlackJack</h1>
+  <h2>Game <span id="game_id">not started</span></h2>
+  <button id="start" onclick="App.createNewGame(10)">Start new game</button>
+  <br>
+  <h3>Account <span id="user1">1</span> has <span class="black"><span id="balance1">0</span> BJT</span></h3>
+  <label for="bet1">Bet: </label><input type="text" id="bet1" value=2></input>
+  <button id="hit1" onclick="App.hitNewCard(1, document.getElementById('bet1').value)">Hit</button>
+  <button id="hold1" onclick="App.holdForResult(1)">Hold</button>
+  <br><div id="cards1"></div>
+  <br>
+  <h3>Account <span id="user2">2</span> has <span class="black"><span id="balance2">0</span> BJT</span></h3>
+  <label for="bet2">Bet: </label><input type="text" id="bet2" value=2></input>
+  <button id="hit2" onclick="App.hitNewCard(2, document.getElementById('bet1').value)">Hit</button>
+  <button id="hold2" onclick="App.holdForResult(2)">Hold</button>
+  <br><div id="cards2"></div>
+</body>
+</html>
