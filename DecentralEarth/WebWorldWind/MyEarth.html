@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="bootstrap.min.js"></script>
+    <script data-main="MyEarth" src="require.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+<div class="container" id="globe">
+  <br><label for="user">Account: </label><input type="text" id="user" placeholder="0x..."></input>
+  <br><label for="username">Name: </label><input type="text" id="username" value="Unnamed"></input>
+  <br><label for="ether">Cost: </label><input type="text" id="ether" placeholder="0"></input>
+  <button id="buy" onclick="App.setCountryOwnerFromHTML(selectedCountry)">Buy country</button><br>
+  <canvas id="canvasOne" width="800" height="800" style="background-color: black;">
+    Your browser does not support HTML5 Canvas.
+  </canvas>
+</div>
+</body>
+</html>
+
+

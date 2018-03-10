@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Decentral-Earth by Wang Rui</title>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>Decentral-Earth</h1>
+  <br><label for="user">Account: </label><input type="text" id="user" placeholder="0x..."></input>
+  <br><label for="username">Name: </label><input type="text" id="username" value="Unnamed"></input>
+  <br><label for="ether">Ether to cost: </label><input type="text" id="ether" placeholder="0"></input>
+  <br><label for="country">Country to buy: </label><input type="text" id="country" placeholder="0"></input>
+  <br><button id="owner" onclick="App.showCountryOwner(parseInt(document.getElementById('country').value))">Check country</button>
+  <button id="money" onclick="App.showBalance(document.getElementById('user').value)">Check money</button>
+  <button id="buy" onclick="App.setCountryOwnerFromHTML(parseInt(document.getElementById('country').value))">Buy country</button>
+</body>
+</html>
